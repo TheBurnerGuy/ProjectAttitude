@@ -28,6 +28,7 @@ public class Mood implements Serializable {
 
     @JestId
     private String id;
+    private String photo;
 
 //    public Mood(String s) {
 //    }
@@ -175,5 +176,14 @@ public class Mood implements Serializable {
      */
     public void setId(String id) {
         this.id = id;
+    }
+
+    public void setPhoto(String photo){
+        //Log.d("photoClassString", photo);
+        this.photo = photo;
+    }
+//
+    public String getPhoto(){
+        return photo;
     }
 }
