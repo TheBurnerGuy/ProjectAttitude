@@ -323,7 +323,8 @@ public class ElasticSearchUserController {
     }
 
     /**
-     * Updates a user request in the database.
+     * Updates a user's follow list in the database.
+     * Used whenever request is accepted.
      */
     public static class UpdateUserRequestTask extends  AsyncTask<User, Void, Void> {
         @Override
@@ -361,7 +362,8 @@ public class ElasticSearchUserController {
     }
 
     /**
-     * Updates a user request in the database.
+     * Updates a user followed list in the database.
+     * Used whenever request is accepted.
      */
     public static class UpdateUserRequestFollowedTask extends  AsyncTask<User, Void, Void> {
         @Override
