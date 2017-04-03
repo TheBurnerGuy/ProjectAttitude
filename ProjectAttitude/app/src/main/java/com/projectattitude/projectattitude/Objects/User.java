@@ -95,7 +95,11 @@ public class User implements Serializable {
     public void addFollow(String followName) {
         followList.add(followName);
     }
-
+    
+    /**
+     * Removes followed user in the user.
+     * @param followName followName
+     */
     public void removeFollow(String followName){
         followList.remove(followName);
     }
