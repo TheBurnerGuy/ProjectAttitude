@@ -203,7 +203,8 @@ public class ElasticSearchRequestController {
     }
 
     /**
-     * Updates a user in the database.
+     * Updates a user's follow requests in the database.
+     * Accessed whenever follow requests are added, accepted, or denied.
      */
     public static class UpdateRequestsTask extends  AsyncTask<User, Void, Void> {
         @Override
