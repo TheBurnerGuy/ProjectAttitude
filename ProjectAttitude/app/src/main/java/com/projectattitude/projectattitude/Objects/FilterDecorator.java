@@ -84,7 +84,11 @@ public abstract class FilterDecorator {
         this.enclosedDecorator = enclosedDecorator;
     }
 
-    //specificFilter must filter moodList depending on its filterType and filterParameter
+    /**
+     * Filters the moodList based off its filterType and filterParameter.
+     * Must be implemented in the child class based off of these requirements.
+     * @param moodList moodList object to be passed in and filtered
+     */
     public abstract void specificFilter(ArrayList<Mood> moodList);
 
 }
